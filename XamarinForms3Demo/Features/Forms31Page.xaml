@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+     x:Class="XamarinForms3Demo.Features.Forms31Page">
+    <ScrollView Padding="10, 0, 10,0">
+        <StackLayout>
+            <!-- Return Button -->
+            <Label Text="Feature : Return Button" FontSize="Medium"
+                 Margin="0,20,0,20" TextColor="Black" />
+            <Entry Placeholder="Enter your text with SEND" HeightRequest="40"
+                 ReturnType="Send" />
+            <Entry Placeholder="Enter your text with SEARCH" HeightRequest="40"
+                 ReturnType="Search" />
+            <Entry Placeholder="Enter your text with DONE" HeightRequest="40"
+                 ReturnType="Done" />
+            <Entry Placeholder="Enter your text with GO" HeightRequest="40"
+                 ReturnType="Go" />
+            <Entry Placeholder="Enter your text with NEXT" HeightRequest="40"
+                 ReturnType="Next" />
+             <!-- Auto-Resize -->
+            <Label Text="Feature : Auto-Resize" FontSize="Medium"
+                 Margin="0,20,0,20" TextColor="Black" />
+            <Editor Text="Auto-Resize Disabled" AutoSize="Disabled" />
+            <Editor Text="Auto-Resize Enabled" AutoSize="TextChanges" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

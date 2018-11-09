@@ -1,0 +1,22 @@
+﻿stacklayout {
+    margin: 20;
+}
+
+^contentpage {
+    background-color: lightgray;
+}
+
+.detailPageTitle {
+    font-style: bold;
+    font-size: medium;
+    text-align: center;
+}
+
+.detailPageSubtitle {
+    text-align: center;
+    font-style: italic;
+}
+
+#LabelTitle {
+    color: red;
+}

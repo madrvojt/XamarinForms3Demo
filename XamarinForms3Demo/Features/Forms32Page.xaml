@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+     x:Class="XamarinForms3Demo.Features.Forms32Page">
+     <NavigationPage.TitleView>
+        <!-- TitleView -->
+        <StackLayout Orientation="Horizontal" Spacing="10" Padding="10, 0, 10, 0">
+                        <Label Text="3.2.0" FontSize="16" TextColor="Black" VerticalTextAlignment="Center" />
+                        <Image Source="xamarin_logo.png" HeightRequest="10" HorizontalOptions="EndAndExpand" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
+    
+    <ScrollView Padding="10, 0, 10,0">
+        <StackLayout>
+            <!-- Button Padding -->
+            <Label Text="Feature : Button Padding" FontSize="Medium"
+                 Margin="0,20,0,20" TextColor="Black" />
+            <Button Text="Without Padding" FlexLayout.AlignSelf="Center"
+                 BackgroundColor="Black" TextColor="White" />
+            <Button Text="With Padding" FlexLayout.AlignSelf="Center"
+                 Padding="60,40" BackgroundColor="Black" TextColor="White" />
+            <!-- Placeholder Color -->
+            <Label Text="Feature : Placeholder Color" FontSize="Medium"
+                 Margin="0,20,0,20" TextColor="Black" />
+            <Editor Placeholder="Leave your comments here"
+                 PlaceholderColor="Purple" />
+            <!--  New OnPlatform/OnIdiom XAML Extension -->
+            <Button Text="Extensions (old)" BackgroundColor="Black" TextColor="White">
+                <Button.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double" Default="40">
+                        <On Platform="iOS" Value="60" />
+                        <On Platform="Android" Value="80" />
+                    </OnPlatform>
+                </Button.HeightRequest>
+            </Button>
+            <Button Text="Extensions (new)" BackgroundColor="Black" TextColor="White"
+                 HeightRequest="{OnPlatform iOS=60, Android=80, Default=40}" />
+              <!-- H  Span-->
+            <Label Text="Feature : Underline Span" FontSize="Medium"
+                 Margin="0,20,0,20" TextColor="Black" />
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="This app is written in C#, XAML, and native APIs using the" />
+                            <Span Text=" " />
+                            <Span Text="Xamarin Platform" FontAttributes="Bold"
+                                 TextColor="Blue" TextDecorations="None">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapCommand, Mode=OneWay}"
+                                         CommandParameter="https://docs.microsoft.com/en-us/xamarin/xamarin-forms/" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                            <Span Text="." />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
