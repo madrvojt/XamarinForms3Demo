@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinForms3Demo.Features.EssentialsPage">
+    <ContentPage.Content>
+        <ScrollView Padding="10, 0, 10,0">
+            <StackLayout>
+                <!-- Xamarin Essentials -->
+                <Label Text="Feature : Xamarin Essentials" FontSize="Medium" Margin="0,20,0,20" TextColor="Black" />
+                <Label x:Name="Battery" Margin="0,20,0,20" />
+                <Label x:Name="Device" Margin="0,20,0,20" />
+                <Label x:Name="Model" Margin="0,20,0,20" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinForms3Demo.Features.Forms35Page">
+    <ContentPage.Content>
+        <ScrollView Padding="10, 0, 10,0">
+            <StackLayout>
+             <!-- Bindable Layout -->
+             <Label Text="Feature : Bindable Layout" FontSize="Medium" Margin="0,20,0,20" TextColor="Black" />
+                <StackLayout BindableLayout.ItemsSource="{Binding Items}">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                                <Label HorizontalTextAlignment="Center" Text="{Binding Name}" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

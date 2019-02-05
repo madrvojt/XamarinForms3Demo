@@ -10,20 +10,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LiveXAML" Version="2.1.45" />
-    <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
+    <PackageReference Include="LiveXAML" Version="2.1.63" />
+    <PackageReference Include="Xamarin.Forms" Version="3.5.0.94564-pre3" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Update="Views\NewItemPage.xaml">
-      <LogicalName>XamarinForms3Demo.Views.NewItemPage.xaml</LogicalName>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Models\Item.cs" />
     <Compile Remove="Services\MockDataStore.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
     <Folder Include="Assets\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 </Project>

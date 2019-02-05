@@ -60,6 +60,13 @@ namespace XamarinForms3Demo.Views
                     case (int)MenuItemType.Forms34:
                         MenuPages.Add(id, new NavigationPage(new Forms34Page()));
                         break;
+                    case (int)MenuItemType.Forms35:
+                        MenuPages.Add(id, new NavigationPage(new Forms35Page()));
+                        break;
+                    case (int)MenuItemType.Essentials:
+                        MenuPages.Add(id, new NavigationPage(new EssentialsPage()));
+                        break;
+                   
                 }
             }
 

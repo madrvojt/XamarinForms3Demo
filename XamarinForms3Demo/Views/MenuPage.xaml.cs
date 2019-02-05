@@ -28,6 +28,9 @@ namespace XamarinForms3Demo.Views
                 new HomeMenuItem {Id = MenuItemType.Forms31, Title="Other news from 3.1" },
                 new HomeMenuItem {Id = MenuItemType.Forms32, Title="News from 3.2" },
                 new HomeMenuItem {Id = MenuItemType.Forms33, Title="News from 3.3" },
+                new HomeMenuItem {Id = MenuItemType.Forms34, Title="News from 3.4" },
+                  new HomeMenuItem {Id = MenuItemType.Forms35, Title="News from 3.5" },
+                     new HomeMenuItem {Id = MenuItemType.Essentials, Title="Intro to Essentials" },
             };
 
             ListViewMenu.ItemsSource = menuItems;

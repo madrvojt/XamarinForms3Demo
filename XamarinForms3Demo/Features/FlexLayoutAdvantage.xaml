@@ -12,7 +12,7 @@
                HorizontalTextAlignment="Center" />
 
         <!-- Body -->
-        <FlexLayout FlexLayout.Grow="1">
+        <FlexLayout FlexLayout.Grow="1" Direction="Row">
 
             <!-- Content -->
             <Label Text="CONTENT"

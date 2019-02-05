@@ -16,7 +16,9 @@ namespace XamarinForms3Demo.Models
         Forms31,
         Forms32,
         Forms33,
-        Forms34
+        Forms34,
+        Forms35,
+        Essentials
 
     }
     public class HomeMenuItem
